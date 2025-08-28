@@ -165,6 +165,24 @@
 			],
 			"actions": [],
 			"sid": 495201682438572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 674679102315542
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Jogador",
+					"sid": 397931308578595
+				}
+			],
+			"sid": 607679038581071
 		}
 	],
 	"sid": 939820637413186
