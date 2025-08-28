@@ -1,0 +1,171 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "JogoAtivo",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 692602291596437
+		},
+		{
+			"eventType": "variable",
+			"name": "Pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 796726967229206
+		},
+		{
+			"eventType": "variable",
+			"name": "CarrosUltrapassados",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 224739510738183
+		},
+		{
+			"eventType": "variable",
+			"name": "VelocidadeEstrada",
+			"type": "number",
+			"initialValue": "600",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 462114910523723
+		},
+		{
+			"eventType": "variable",
+			"name": "VelocidadeAdicional",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 511412581756957
+		},
+		{
+			"eventType": "variable",
+			"name": "IndicePista",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 356799266389868
+		},
+		{
+			"eventType": "variable",
+			"name": "EstaNoite",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 593305205928759
+		},
+		{
+			"eventType": "variable",
+			"name": "IntervaloCiclo",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 655532578322309
+		},
+		{
+			"eventType": "variable",
+			"name": "PistaSorteada",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 449937270055156
+		},
+		{
+			"eventType": "variable",
+			"name": "ProximoMarco",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 214087784993855
+		},
+		{
+			"eventType": "variable",
+			"name": "POS_PISTA_1",
+			"type": "number",
+			"initialValue": "180",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 732403298294889
+		},
+		{
+			"eventType": "variable",
+			"name": "POS_PISTA_2",
+			"type": "number",
+			"initialValue": "360",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 700476314668689
+		},
+		{
+			"eventType": "variable",
+			"name": "POS_PISTA_3",
+			"type": "number",
+			"initialValue": "540",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 307234587337047
+		},
+		{
+			"eventType": "variable",
+			"name": "Y_SPAWN",
+			"type": "number",
+			"initialValue": "-120",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 591467670182518
+		},
+		{
+			"eventType": "variable",
+			"name": "ALTURA_LOOP",
+			"type": "number",
+			"initialValue": "1280",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 293129962272198
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 232367859094544,
+					"parameters": {
+						"variable": "JogoAtivo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 495201682438572
+		}
+	],
+	"sid": 939820637413186
+}
