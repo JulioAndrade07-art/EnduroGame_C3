@@ -1,7 +1,7 @@
 {
-	"name": "asfalto2",
+	"name": "asfalto1",
 	"plugin-id": "TiledBg",
-	"sid": 992373783191914,
+	"sid": 319158131972535,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 9670351,
+		"imageSpriteId": 4427124,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

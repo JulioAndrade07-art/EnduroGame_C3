@@ -3,153 +3,413 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "JogoAtivo",
+			"name": "jogoativo",
 			"type": "boolean",
 			"initialValue": "true",
-			"comment": "",
+			"comment": "Liga/desliga a lógica do jogo (quando  colidir, fica Falso).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 692602291596437
+			"sid": 466907053602065
 		},
 		{
 			"eventType": "variable",
-			"name": "Pontos",
+			"name": "pontos",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "",
+			"comment": "Quantidade de carros ultrapassados  (nossa pontuação).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 796726967229206
+			"sid": 251018371687370
 		},
 		{
 			"eventType": "variable",
-			"name": "CarrosUltrapassados",
+			"name": "carrosultrapassados",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "",
+			"comment": "Contagem de ultrapassagens (usaremos junto de Pontos).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 224739510738183
+			"sid": 753324943283632
 		},
 		{
 			"eventType": "variable",
-			"name": "VelocidadeEstrada",
+			"name": "velocidadeestrada",
 			"type": "number",
 			"initialValue": "600",
-			"comment": "",
+			"comment": "Velocidade base da rolagem vertical  (pixels por segundo).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 462114910523723
+			"sid": 270309760190563
 		},
 		{
 			"eventType": "variable",
-			"name": "VelocidadeAdicional",
+			"name": "velocidadeadicional",
 			"type": "number",
 			"initialValue": "120",
-			"comment": "",
+			"comment": "Velocidade relativa aplicada aos inimigos (para parecerem “mais lentos”).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 511412581756957
+			"sid": 600613298271745
 		},
 		{
 			"eventType": "variable",
-			"name": "IndicePista",
+			"name": "indicedepista",
 			"type": "number",
 			"initialValue": "2",
-			"comment": "",
+			"comment": "1, 2 ou 3 (pistas); o carro do jogador  inicia no meio.",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 356799266389868
+			"sid": 748193808267036
 		},
 		{
 			"eventType": "variable",
-			"name": "EstaNoite",
+			"name": "estanoite",
 			"type": "boolean",
 			"initialValue": "false",
-			"comment": "",
+			"comment": "Alterna dia/noite.",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 593305205928759
+			"sid": 432408956192506
 		},
 		{
 			"eventType": "variable",
-			"name": "IntervaloCiclo",
+			"name": "intervalociclo",
 			"type": "number",
 			"initialValue": "15",
-			"comment": "",
+			"comment": "Duração (em segundos) de cada fase  (dia ou noite).",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 655532578322309
+			"sid": 859339396496745
 		},
 		{
 			"eventType": "variable",
-			"name": "PistaSorteada",
+			"name": "pistasorteada",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "",
+			"comment": "Pista sorteada para Spawn do inimigo",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 449937270055156
+			"sid": 970232406036650
 		},
 		{
 			"eventType": "variable",
-			"name": "ProximoMarco",
+			"name": "proximomarco",
 			"type": "number",
 			"initialValue": "5",
-			"comment": "",
+			"comment": "Controla a progressão de velocidade",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 214087784993855
+			"sid": 117225775492488
 		},
 		{
 			"eventType": "variable",
-			"name": "POS_PISTA_1",
+			"name": "pospista1",
 			"type": "number",
 			"initialValue": "180",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
-			"sid": 732403298294889
+			"sid": 269789185600675
 		},
 		{
 			"eventType": "variable",
-			"name": "POS_PISTA_2",
+			"name": "pospista2",
 			"type": "number",
 			"initialValue": "360",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
-			"sid": 700476314668689
+			"sid": 599721863100946
 		},
 		{
 			"eventType": "variable",
-			"name": "POS_PISTA_3",
+			"name": "pospista3",
 			"type": "number",
 			"initialValue": "540",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
-			"sid": 307234587337047
+			"sid": 293487518773525
 		},
 		{
 			"eventType": "variable",
-			"name": "Y_SPAWN",
+			"name": "yspawn",
 			"type": "number",
 			"initialValue": "-120",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": false,
-			"sid": 591467670182518
+			"isConstant": true,
+			"sid": 198763865637683
 		},
 		{
 			"eventType": "variable",
-			"name": "ALTURA_LOOP",
+			"name": "alturaloop",
 			"type": "number",
 			"initialValue": "1280",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": false,
-			"sid": 293129962272198
+			"isConstant": true,
+			"sid": 749064396016043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 957107799334461,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 502584774076251,
+					"parameters": {
+						"variable": "jogoativo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 600531038049386,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 576317086964767,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 4,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 377255528745492,
+							"parameters": {
+								"variable": "indicedepista",
+								"value": "indicedepista-1"
+							}
+						}
+					],
+					"sid": 186029992196903
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 431825713405345,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 334130079987831,
+							"parameters": {
+								"x": "pospista1"
+							}
+						}
+					],
+					"sid": 114035456026851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 537836066993268,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 770129551521835,
+							"parameters": {
+								"x": "pospista2"
+							}
+						}
+					],
+					"sid": 431317296223942
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 678066463130366,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 525395746897394,
+							"parameters": {
+								"x": "pospista3"
+							}
+						}
+					],
+					"sid": 576137545033382
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 652928635772803,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 527604464900573,
+					"parameters": {
+						"variable": "jogoativo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 992281602384533,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 568038783110126,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 2,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 365384495351231,
+							"parameters": {
+								"variable": "indicedepista",
+								"value": "indicedepista+1"
+							}
+						}
+					],
+					"sid": 402102615790214
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 930270455569851,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 426776316611932,
+							"parameters": {
+								"x": "pospista1"
+							}
+						}
+					],
+					"sid": 606583854720935
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 353982815235753,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 349716172381696,
+							"parameters": {
+								"x": "pospista2"
+							}
+						}
+					],
+					"sid": 243831760467600
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 428273376534113,
+							"parameters": {
+								"first-value": "indicedepista",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite",
+							"sid": 758125165425153,
+							"parameters": {
+								"x": "pospista3"
+							}
+						}
+					],
+					"sid": 490451861422982
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -157,33 +417,249 @@
 				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 232367859094544,
+					"sid": 532690840185822,
 					"parameters": {
-						"variable": "JogoAtivo"
+						"variable": "jogoativo"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 665454292634062,
+					"parameters": {
+						"interval-seconds": "1.0"
 					}
 				}
 			],
-			"actions": [],
-			"sid": 495201682438572
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 679382017003317,
+					"parameters": {
+						"object-to-create": "inimigo",
+						"layer": "0",
+						"x": "0",
+						"y": "yspawn",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 555464699551497,
+					"parameters": {
+						"variable": "pistasorteada",
+						"value": "floor(random(1,3+1))"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "inimigo",
+					"sid": 583615124499905,
+					"parameters": {
+						"x": "pospista1"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "inimigo",
+					"sid": 503818643801877,
+					"parameters": {
+						"x": "pospista2"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "inimigo",
+					"sid": 437490336084761,
+					"parameters": {
+						"x": "pospista3"
+					}
+				}
+			],
+			"sid": 848080162137276
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 674679102315542
+					"id": "on-created",
+					"objectClass": "inimigo",
+					"sid": 325554577446497
 				}
 			],
 			"actions": [
 				{
-					"id": "stop-animation",
-					"objectClass": "Jogador",
-					"sid": 397931308578595
+					"id": "set-animation-speed",
+					"objectClass": "inimigo",
+					"sid": 518792111763278,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "inimigo",
+					"sid": 999375653674114,
+					"parameters": {
+						"frame-number": "float(random(1,3+1))"
+					}
 				}
 			],
-			"sid": 607679038581071
+			"sid": 620307253518661
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 459321097651685,
+					"parameters": {
+						"variable": "jogoativo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 902563980843259,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 181142457886625
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "inimigo",
+							"sid": 256701639387090,
+							"parameters": {
+								"y": "(velocidadeestrada+velocidadeadicional)*dt"
+							}
+						}
+					],
+					"sid": 201651466134888,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "inimigo",
+									"sid": 885002704327566,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "Sprite.y"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "inimigo",
+									"sid": 830938426219507,
+									"parameters": {
+										"instance-variable": "contado"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "inimigo",
+									"sid": 859714550694928,
+									"parameters": {
+										"instance-variable": "contado",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 105577927677631,
+									"parameters": {
+										"variable": "pontos",
+										"value": "pontos+1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 709644283750769,
+									"parameters": {
+										"variable": "carrosultrapassados",
+										"value": "carrosultrapassados+1"
+									}
+								}
+							],
+							"sid": 925478572659781
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "inimigo",
+									"sid": 160945564618752,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "ViewportBottom(0) +100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "inimigo",
+									"sid": 365993366064281
+								}
+							],
+							"sid": 825505904258136
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 797178903543254,
+					"parameters": {
+						"object": "inimigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 838267810172084,
+					"parameters": {
+						"variable": "jogoativo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite",
+					"sid": 428633520973474
+				},
+				{
+					"id": "destroy",
+					"objectClass": "inimigo",
+					"sid": 946663304248799
+				}
+			],
+			"sid": 617342954611987
 		}
 	],
-	"sid": 939820637413186
+	"sid": 998520432064449
 }
