@@ -2,12 +2,12 @@
 	"name": "Layout 1",
 	"layers": [
 		{
-			"name": "Layout1",
+			"name": "jogo",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Afaslto1",
+					"type": "asfalto1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -26,12 +26,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 2,
-					"sid": 271788906559342,
+					"sid": 824550586266764,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 271788906559342,
+						"sid": 824550586266764,
 						"expanded": true
 					},
 					"showing": true,
@@ -54,7 +54,7 @@
 					}
 				},
 				{
-					"type": "Asfalto2",
+					"type": "asfalto1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -73,12 +73,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 3,
-					"sid": 445904888895364,
+					"sid": 406743097167473,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 445904888895364,
+						"sid": 406743097167473,
 						"expanded": true
 					},
 					"showing": true,
@@ -101,54 +101,7 @@
 					}
 				},
 				{
-					"type": "Faixas1",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 4,
-					"sid": 697515220646897,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 697515220646897,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1026,
-						"y": -205,
-						"width": 60,
-						"height": 720,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Faixas2",
+					"type": "faixa1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -167,21 +120,21 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 5,
-					"sid": 953975099623284,
+					"sid": 497565678223103,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 953975099623284,
+						"sid": 497565678223103,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1157,
-						"y": -205,
-						"width": 60,
-						"height": 720,
+						"x": 0,
+						"y": -1280,
+						"width": 720,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -195,32 +148,42 @@
 					}
 				},
 				{
-					"type": "Jogador",
+					"type": "faixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
 					},
 					"uid": 6,
-					"sid": 897286008875028,
+					"sid": 274982525810811,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 897286008875028,
+						"sid": 274982525810811,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 360,
-						"y": 1080,
-						"width": 64,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 0,
+						"y": 0,
+						"width": 720,
+						"height": 60,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -232,7 +195,7 @@
 					}
 				},
 				{
-					"type": "Inimigo",
+					"type": "Sprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -240,26 +203,110 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 8,
-					"sid": 124848404638348,
+					"uid": 7,
+					"sid": 418742122841117,
 					"tags": "",
-					"instanceVariables": {
-						"Contado": false
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 124848404638348,
+						"sid": 418742122841117,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 842,
-						"y": 1002,
+						"x": 360,
+						"y": 1080,
 						"width": 64,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.984375,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "inimigo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 423639406390574,
+					"tags": "",
+					"instanceVariables": {
+						"contado": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 423639406390574,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 360,
+						"y": 1,
+						"width": 64,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.0078125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Faixa2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 4,
+					"sid": 585118566219570,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 585118566219570,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1165,
+						"y": 194,
+						"width": 720,
+						"height": 60,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -271,7 +318,7 @@
 					}
 				}
 			],
-			"sid": 519821691511833,
+			"sid": 683874829898714,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -283,9 +330,9 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": false,
@@ -301,11 +348,11 @@
 			"global": false
 		},
 		{
-			"name": "HUD",
+			"name": "hud",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 543102514328908,
+			"sid": 989045322417639,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -317,14 +364,14 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
@@ -339,11 +386,11 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 859122682241032,
+	"sid": 500046743207241,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1440,
-	"height": 2560,
+	"width": 720,
+	"height": 1280,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

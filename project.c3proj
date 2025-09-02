@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 44902,
-	"name": "Novo projeto",
+	"name": "CarJojos",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -28,16 +28,16 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "0r0b7zggk2o",
+	"uniqueId": "qq19w7v8omz",
 	"objectTypes": {
 		"items": [
-			"Afaslto1",
-			"Asfalto2",
-			"Faixas1",
-			"Faixas2",
-			"Jogador",
+			"asfalto1",
+			"asfalto2",
+			"faixa1",
+			"Sprite",
 			"Teclado",
-			"Inimigo"
+			"inimigo",
+			"Faixa2"
 		],
 		"subfolders": []
 	},
@@ -84,25 +84,17 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-32.png",
+					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 634890688941200,
+					"sid": 403233274096311,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "loading-logo.png",
+					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 746642782104666,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-16.png",
-					"type": "image/png",
-					"sid": 266911061090879,
+					"sid": 193167147737212,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -110,7 +102,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 746531476499769,
+					"sid": 913153191946496,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -118,15 +110,7 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 771728138321428,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 809363609727153,
+					"sid": 377468990648786,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -134,9 +118,25 @@
 				{
 					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 358119132315216,
+					"sid": 365777599862385,
 					"icon-info": {
 						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 633403390763694,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 524685453083320,
+					"icon-info": {
+						"purpose": "loading-logo"
 					}
 				}
 			],
@@ -172,12 +172,12 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -198,12 +198,12 @@
 			1,
 			0
 		],
-		"orientations": "portrait",
+		"orientations": "landscape",
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
-		"sampling": "nearest",
+		"sampling": "trilinear",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",

@@ -1,7 +1,7 @@
 {
-	"name": "asfalto2",
+	"name": "faixa1",
 	"plugin-id": "TiledBg",
-	"sid": 992373783191914,
+	"sid": 680464160896318,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,14 +9,14 @@
 	"effectTypes": [],
 	"image": {
 		"width": 720,
-		"height": 1280,
+		"height": 60,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 9670351,
+		"imageSpriteId": 9620190,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
